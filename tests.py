@@ -71,5 +71,6 @@ class TestPlayer(unittest.TestCase):
 class TestDota2(unittest.TestCase):
     pass
 
+
 if __name__ == '__main__':
     unittest.main()
