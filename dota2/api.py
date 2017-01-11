@@ -29,7 +29,7 @@ class Api(object):
         """Check if the API key is valid by making a single call to the Steam 
         API service."""
 
-        return bool(self.get('GetMatchHistory'))
+        return bool(self.get('IDOTA2Match_570', 'GetMatchHistory'))
 
     def get(self, interface, resource, params=None):
         """
