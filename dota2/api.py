@@ -389,7 +389,7 @@ class DetailedPlayer(Player):
 
     @property
     def kda(self):
-        return (1. * self.kills + self.assists) / self.deaths
+        return ((1. * self.kills + self.assists) / self.deaths) if self.deaths != 0 else (1. * self.kills + self.assists)
 
     @property
     def leaver_status(self):
